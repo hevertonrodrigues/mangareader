@@ -1,0 +1,19 @@
+{
+  "name": "mangareader",
+  "version": "0.0.0",
+  "homepage": "https://github.com/umpx/mangareader",
+  "authors": [
+    "Raul"
+  ],
+  "private": true,
+  "description": "Packages for mangareader",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ]
+}
