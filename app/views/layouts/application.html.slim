@@ -1,10 +1,28 @@
 doctype html
 html
   head
+    meta charset='utf-8'
+    meta http-equiv='X-UA-Compatible' content='IE=edge'
+    meta name='viewport' content='width=device-width, initial-scale=1'
     title mangareader
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    = csrf_meta_tags
-  
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags  
   body
-    = yield
+    main.container
+      header.masthead
+        h1.text-muted mangareader
+        nav
+          ul.nav.nav-justified
+            li.active = link_to t('views.application.nav.home'), '#'
+            li = link_to t('views.application.nav.projects'), '#'
+            li = link_to t('views.application.nav.about'), '#'
+            li = link_to t('views.application.nav.contact'), '#'
+            li = link_to t('views.application.nav.blog'), '#'
+
+      = yield
+      
+      footer.footer
+        p &copy; umpx #{Time.now.year}
+
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true

@@ -1,2 +1,19 @@
-h1 Home
-p Welcome
+section.section-home
+  .jumbotron
+    h1 = t('views.home.jumbotron.title')
+    p.lead = t('views.home.jumbotron.lead')
+    p = link_to t('views.home.jumbotron.sign_in'), '#', class: 'btn btn-lg btn-success jumbotron-btn'
+
+  .row
+    acticle.manga-list
+      h2.manga-title One Piece
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+      p = link_to t('views.home.manga.view_details'), '#', class: 'btn btn-primary', role: 'button'
+    acticle.manga-list
+      h2.manga-title One Piece
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+      p = link_to t('views.home.manga.view_details'), '#', class: 'btn btn-primary', role: 'button'
+    acticle.manga-list
+      h2.manga-title One Piece
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+      p = link_to t('views.home.manga.view_details'), '#', class: 'btn btn-primary', role: 'button'
